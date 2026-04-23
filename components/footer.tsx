@@ -100,18 +100,18 @@ export function Footer() {
             <ul className="flex flex-col gap-3 text-background/70">
               <li>
                 <span className="block text-sm">Endereço:</span>
-                <span>Rua da Liberdade 71, Vila Alice, Luanda</span>
+                <span>Av. Paulista, 1234 - São Paulo, SP</span>
               </li>
               <li>
                 <span className="block text-sm">Telefone:</span>
-                <a href="tel: (+244) 928 938 157" className="hover:text-primary transition-colors">
-                  (+244) 928 938 157
+                <a href="tel:+5511999999999" className="hover:text-primary transition-colors">
+                  (11) 99999-9999
                 </a>
               </li>
               <li>
                 <span className="block text-sm">E-mail:</span>
-                <a href="mailto:geral@cmlapaz.com" className="hover:text-primary transition-colors">
-                  geral@cmlapaz.com
+                <a href="mailto:contato@clinicalapaz.com.br" className="hover:text-primary transition-colors">
+                  contato@clinicalapaz.com.br
                 </a>
               </li>
             </ul>

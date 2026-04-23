@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Calendar, Clock, Shield, ChevronLeft, ChevronRight } from "lucide-react"
 import { useState, useEffect, useCallback } from "react"
@@ -8,7 +9,7 @@ const slides = [
     badge: "Bem-vindo à Clínica Lá Paz",
     title: "Sua saúde em",
     highlight: "boas mãos",
-    description: "Há mais de 5 anos cuidando da saúde e bem-estar das famílias. Nossa equipe de especialistas está pronta para oferecer o melhor atendimento com carinho e profissionalismo.",
+    description: "Há mais de 20 anos cuidando da saúde e bem-estar das famílias. Nossa equipe de especialistas está pronta para oferecer o melhor atendimento com carinho e profissionalismo.",
     image: "/images/slide-1.jpg",
     imageAlt: "Equipe médica da Clínica Lá Paz"
   },
@@ -110,10 +111,10 @@ export function Hero() {
 
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button size="lg" asChild className="text-base">
-                <a href="#contato">
+                <Link to="/agendar">
                   <Calendar className="w-5 h-5 mr-2" />
                   Agendar Consulta
-                </a>
+                </Link>
               </Button>
               <Button size="lg" variant="outline" asChild className="text-base">
                 <a href="#servicos">Nossos Serviços</a>
@@ -160,7 +161,7 @@ export function Hero() {
                 <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-2">
                   <Clock className="w-6 h-6 text-primary" />
                 </div>
-                <span className="text-2xl font-bold text-foreground">5+</span>
+                <span className="text-2xl font-bold text-foreground">20+</span>
                 <span className="text-sm text-muted-foreground">Anos de experiência</span>
               </div>
               <div className="flex flex-col items-center lg:items-start">

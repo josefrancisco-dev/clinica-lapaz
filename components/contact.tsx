@@ -8,20 +8,20 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Endereço",
-    content: "Rua da Liberdade 71, Vila Alice, Luanda",
+    content: "Av. Paulista, 1234 - São Paulo, SP",
     link: "https://maps.google.com"
   },
   {
     icon: Phone,
     title: "Telefone",
-    content: "(+244) 928 938 157",
-    link: "tel: +244 928 938 157"
+    content: "(11) 99999-9999",
+    link: "tel:+5511999999999"
   },
   {
     icon: Mail,
     title: "E-mail",
-    content: "geral@cmlapaz.com",
-    link: "mailto:geral@cmlapaz.com"
+    content: "contato@clinicalapaz.com.br",
+    link: "mailto:contato@clinicalapaz.com.br"
   },
   {
     icon: Clock,
@@ -65,74 +65,20 @@ export function Contact() {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Contact Form */}
-          <Card className="border-border/50">
-            <CardContent className="p-6 lg:p-8">
-              <h3 className="text-xl font-semibold text-foreground mb-6">
-                Envie uma mensagem
-              </h3>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-foreground mb-1.5">
-                    Nome completo
-                  </label>
-                  <Input
-                    id="name"
-                    type="text"
-                    placeholder="Seu nome"
-                    value={formData.name}
-                    onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    required
-                  />
-                </div>
-                <div className="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-foreground mb-1.5">
-                      E-mail
-                    </label>
-                    <Input
-                      id="email"
-                      type="email"
-                      placeholder="seu@email.com"
-                      value={formData.email}
-                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-1.5">
-                      Telefone
-                    </label>
-                    <Input
-                      id="phone"
-                      type="tel"
-                      placeholder="(+244) 928 938 157"
-                      value={formData.phone}
-                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                      required
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-foreground mb-1.5">
-                    Mensagem
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    placeholder="Como podemos ajudá-lo?"
-                    value={formData.message}
-                    onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                    required
-                    className="w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
-                  />
-                </div>
-                <Button type="submit" size="lg" className="w-full mt-2">
-                  Enviar Mensagem
-                </Button>
-              </form>
-            </CardContent>
-          </Card>
+          
+          {/* Map Placeholder */}
+          <div className="flex-1 min-h-[200px] rounded-xl overflow-hidden border border-border">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0976902465644!2d-46.65512922359857!3d-23.563405161666096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
+              width="100%"
+              height="100%"
+              style={{ border: 0, minHeight: "200px" }}
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Localização da Clínica Lá Paz"
+            />
+          </div>
 
           {/* Contact Info */}
           <div className="flex flex-col gap-6">
@@ -160,21 +106,7 @@ export function Contact() {
                   )}
                 </div>
               </div>
-            ))}
-
-            {/* Map Placeholder */}
-            <div className="flex-1 min-h-[200px] rounded-xl overflow-hidden border border-border">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0976902465644!2d-46.65512922359857!3d-23.563405161666096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr"
-                width="100%"
-                height="100%"
-                style={{ border: 0, minHeight: "200px" }}
-                allowFullScreen
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                title="Localização da Clínica Lá Paz"
-              />
-            </div>
+            ))}    
           </div>
         </div>
       </div>

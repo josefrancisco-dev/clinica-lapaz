@@ -25,7 +25,7 @@ export function About() {
             </div>
             {/* Stats Card */}
             <div className="absolute -bottom-8 -right-8 bg-primary text-primary-foreground rounded-2xl p-6 shadow-xl">
-              <p className="text-4xl font-bold">5+</p>
+              <p className="text-4xl font-bold">20+</p>
               <p className="text-sm opacity-90">Anos de história</p>
             </div>
           </div>
@@ -40,7 +40,7 @@ export function About() {
             </h2>
             <p className="mt-6 text-lg text-muted-foreground text-pretty">
               A Clínica Lá Paz nasceu do sonho de oferecer atendimento médico 
-              de excelência com acolhimento e humanização. Desde 2021, 
+              de excelência com acolhimento e humanização. Desde 2004, 
               trabalhamos incansavelmente para proporcionar a melhor 
               experiência em saúde para nossos pacientes.
             </p>

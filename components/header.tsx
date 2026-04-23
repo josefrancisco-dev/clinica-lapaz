@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import { Button } from "@/components/ui/button"
 import { Menu, X, Phone } from "lucide-react"
 
@@ -43,12 +44,12 @@ export function Header() {
 
           {/* CTA Button */}
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+244 928 938 157" className="flex items-center gap-2 text-primary font-medium">
+            <a href="tel:+5511999999999" className="flex items-center gap-2 text-primary font-medium">
               <Phone className="w-4 h-4" />
-              (+244) 928 938 157
+              (11) 99999-9999
             </a>
             <Button asChild>
-              <a href="#contato">Agendar Consulta</a>
+              <Link to="/agendar">Agendar Consulta</Link>
             </Button>
           </div>
 
@@ -82,7 +83,7 @@ export function Header() {
                   (11) 99999-9999
                 </a>
                 <Button asChild className="w-full">
-                  <a href="#contato">Agendar Consulta</a>
+                  <Link to="/agendar">Agendar Consulta</Link>
                 </Button>
               </div>
             </div>

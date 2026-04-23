@@ -1,5 +1,4 @@
-
-
+import { Card, CardContent } from "@/components/ui/card"
 import { 
   Heart, 
   Brain, 
@@ -10,7 +9,6 @@ import {
   Syringe,
   Activity
 } from "lucide-react"
-import { Card, CardContent } from "./ui/card"
 
 const services = [
   {
