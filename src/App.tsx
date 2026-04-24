@@ -1,8 +1,8 @@
 import { Routes, Route } from 'react-router-dom'
-import { Header } from '@/components/header'
-import { Footer } from '@/components/footer'
-import HomePage from '@/pages/home'
-import AgendarPage from '@/pages/agendar'
+import { Header } from '@/src/components/header'
+import { Footer } from '@/src/components/footer'
+import HomePage from '@/src/pages/home'
+import AgendarPage from '@/src/pages/agendar'
 
 function App() {
   return (
